@@ -86,7 +86,7 @@ const Side = () => {
                 </li>
                 <li>
                   <Link href="/autoMobileEng" className="block p-2 hover:bg-gray-700 hover:text-green-500 duration-200">
-                    Automobile
+                    Automobile eng 
                   </Link>
                 </li>
               </ul>
