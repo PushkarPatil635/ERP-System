@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'http://127.0.0.1:8080';  // Adjust if necessary
+const API_URL = 'http://127.0.0.1:8000';  // Adjust if necessary
 
 
 
@@ -25,4 +25,4 @@ export const login = async (username, password) => {
     }
   };
 
-// Add more API functions for creating, updating, and deleting students as needed
+

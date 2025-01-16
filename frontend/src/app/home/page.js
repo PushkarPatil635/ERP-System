@@ -15,6 +15,16 @@ const StudentsPage = () => {
     });
 
     const [isModalOpen, setIsModalOpen] = useState(false);
+
+    const fetchStudents = async () => {
+        try {
+            const data = await getStudents();
+            setStudents(data);
+        } catch (error) {
+            console.error("Error Fetching Students", error);
+            
+        }
+    }
  
     const handleAddStudentModal = () => {
         setIsModalOpen(true);
@@ -27,10 +37,13 @@ const StudentsPage = () => {
     
 
     useEffect(() => {
-        const fetchStudents = async () => {
-            const data = await getStudents();
-            setStudents(data);
-        };
+        // const fetchStudents = async () => {
+        //     const data = await getStudents();
+        //     setStudents(data);
+            
+        // };
+        
+        
 
         fetchStudents();
     }, [formData]);
@@ -45,6 +58,14 @@ const StudentsPage = () => {
              
               onClick={handleAddStudentModal} >
                 Add Student
+            </button>
+            </div>
+            <div className='' >
+            <button
+             className='absolute top-28 right-44 text-white bg-blue-500 p-4 rounded-lg'
+             
+              onClick={fetchStudents} >
+                Refresh
             </button>
             </div>
             {isModalOpen && (

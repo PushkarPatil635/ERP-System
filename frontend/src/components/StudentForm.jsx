@@ -18,7 +18,7 @@ const StudentForm = ({ onClose, formData = {}, setFormData }) => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         onClose();
-        setFormData([]);
+        setFormData({});
 
 
         try {

@@ -53,6 +53,13 @@ const Side = () => {
             </div>
           </li>
           <li className="opcion-con-desplegable">
+            <div className="flex items-center justify-between p-2 hover:bg-gray-800 hover:text-green-500 duration-200">
+              <div className="flex items-center">
+                <Link href="/statistics">Statistics</Link>
+              </div>
+            </div>
+          </li>
+          <li className="opcion-con-desplegable">
             <div 
               className="flex items-center justify-between p-2 hover:bg-gray-800 hover:text-green-500 duration-200 cursor-pointer" 
               onClick={toggleDropdown}
@@ -99,3 +106,4 @@ const Side = () => {
 };
 
 export default Side;
+

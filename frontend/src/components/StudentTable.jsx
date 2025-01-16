@@ -5,7 +5,7 @@ import { toast, ToastContainer } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 
 
-const StudentTable = ({ students: initialStudents, fetchStudents }) => {
+const StudentTable = ({ students: initialStudents }) => {
     
     const [students, setStudents] = useState(initialStudents);
     
@@ -48,7 +48,6 @@ const StudentTable = ({ students: initialStudents, fetchStudents }) => {
     
     return (
         <div>
-            
             <div className="flex justify-center items-center mt-20 ml-72">
                 <table className="w-[1500px] mx-auto mt-8 table-auto bg-white shadow-lg rounded-lg">
                     <thead className="bg-gray-300">
@@ -58,7 +57,8 @@ const StudentTable = ({ students: initialStudents, fetchStudents }) => {
                             <th className="py-4 px-6 border-b border-gray-200 text-gray-600 font-semibold text-center">Email</th>
                             <th className="py-4 px-6 border-b border-gray-200 text-gray-600 font-semibold text-center">Branch</th>
                             <th className="py-4 px-6 border-b border-gray-200 text-gray-600 font-semibold text-center">Birth Date</th>
-                            <th className="py-4 px-6 border-b border-gray-200 text-gray-600 font-semibold text-center"></th>
+                            <th className="py-4 px-6 border-b border-gray-200 text-gray-600 font-semibold text-center">Options</th>
+                            
                         </tr>
                     </thead>
                     <tbody className="divide-y divide-gray-200">
@@ -70,9 +70,8 @@ const StudentTable = ({ students: initialStudents, fetchStudents }) => {
                                     <td className="text-center py-4 px-6 border-b border-gray-200 text-gray-700">{student.email}</td>
                                     <td className="text-center py-4 px-6 border-b border-gray-200 text-gray-700">{student.branch}</td>
                                     <td className="text-center py-4 px-6 border-b border-gray-200 text-gray-700">{student.birthday}</td>
-                                    <td className="text-center py-4 px-6 border-b border-gray-200 text-gray-700">{student.student_id}</td>
-                                    <td>
-                                        <button
+                                    <td className="text-center py-4 px-6 border-b border-gray-200 text-gray-700">{student.student_id}
+                                    <button
                                             onClick={() => handleDelete(student.id)}
                                             className="bg-red-500 text-white px-3 py-1 rounded hover:bg-red-600 active:bg-red-700"
                                         >
