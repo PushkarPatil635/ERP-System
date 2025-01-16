@@ -65,7 +65,7 @@ const Side = () => {
               onClick={toggleDropdown}
             >
               <div className="flex items-center">
-                <a>Student Details</a>
+                <a>All Branches</a>
               </div>
               <FaChevronLeft className={` text-xs transform duration-200 ${isDropdownOpen ? '-rotate-90' : 'rotate-180'}`}/>
             </div>

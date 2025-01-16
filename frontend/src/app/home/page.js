@@ -54,7 +54,7 @@ const StudentsPage = () => {
         <div>
             <div className='' >
             <button
-             className='absolute top-28 right-10 text-white bg-blue-500 p-4 rounded-lg'
+             className='absolute top-28 right-10 text-white bg-gray-800 p-4 rounded-lg hover:bg-green-500 duration-200'
              
               onClick={handleAddStudentModal} >
                 Add Student
@@ -62,7 +62,7 @@ const StudentsPage = () => {
             </div>
             <div className='' >
             <button
-             className='absolute top-28 right-44 text-white bg-blue-500 p-4 rounded-lg'
+             className='absolute top-28 right-44 text-white bg-gray-800 p-4 rounded-lg hover:bg-green-500 duration-200'
              
               onClick={fetchStudents} >
                 Refresh

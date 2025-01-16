@@ -44,20 +44,19 @@ const StudentTable = ({ students: initialStudents }) => {
         }
     };
     
-    console.log("Students data:", students);
     
     return (
         <div>
             <div className="flex justify-center items-center mt-20 ml-72">
                 <table className="w-[1500px] mx-auto mt-8 table-auto bg-white shadow-lg rounded-lg">
-                    <thead className="bg-gray-300">
-                        <tr>
-                            <th className="py-4 px-6 border-b border-gray-200 text-gray-600 font-semibold text-center">ID</th>
-                            <th className="py-4 px-6 border-b border-gray-200 text-gray-600 font-semibold text-center">Name</th>
-                            <th className="py-4 px-6 border-b border-gray-200 text-gray-600 font-semibold text-center">Email</th>
-                            <th className="py-4 px-6 border-b border-gray-200 text-gray-600 font-semibold text-center">Branch</th>
-                            <th className="py-4 px-6 border-b border-gray-200 text-gray-600 font-semibold text-center">Birth Date</th>
-                            <th className="py-4 px-6 border-b border-gray-200 text-gray-600 font-semibold text-center">Options</th>
+                    <thead className="bg-gray-800">
+                        <tr className="text-white">
+                            <th className="py-4 px-6 border-b border-gray-200 font-semibold text-center hover:text-green-500 duration-200">ID</th>
+                            <th className="py-4 px-6 border-b border-gray-200 font-semibold text-center hover:text-green-500 duration-200">Name</th>
+                            <th className="py-4 px-6 border-b border-gray-200 font-semibold text-center hover:text-green-500 duration-200">Email</th>
+                            <th className="py-4 px-6 border-b border-gray-200 font-semibold text-center hover:text-green-500 duration-200">Branch</th>
+                            <th className="py-4 px-6 border-b border-gray-200 font-semibold text-center hover:text-green-500 duration-200">Birth Date</th>
+                            <th className="py-4 px-6 border-b border-gray-200 font-semibold text-center hover:text-green-500 duration-200">Options</th>
                             
                         </tr>
                     </thead>

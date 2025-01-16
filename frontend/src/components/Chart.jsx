@@ -61,6 +61,10 @@ const Chart = () => {
     scales: {
       y: {
         beginAtZero: true,
+        ticks: {
+          stepSize: 1,
+          callBack: (value) => Number.isInteger(value) ? value : null,
+        },
       },
     },
   };
